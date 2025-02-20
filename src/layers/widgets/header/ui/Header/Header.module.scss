@@ -1,0 +1,16 @@
+.underline {
+	color: rgb(0, 77, 64);
+	border-style: double;
+	border-width: 1px;
+	margin-top: 10px;
+}
+
+.container {
+	padding: 2px 2px 32px 2px;
+	height: 99px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
