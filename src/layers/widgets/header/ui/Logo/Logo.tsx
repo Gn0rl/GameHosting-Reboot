@@ -10,7 +10,7 @@ export function Logo() {
 				alt="GameHosting Reboot"
 				width={80}
 				height={80}
-			></Image>
+			/>
 			<div className={styles.text}>
 				<div className={styles.word}>GAMEHOSTING</div>
 				<div className={styles.word}>REBOOT</div>
