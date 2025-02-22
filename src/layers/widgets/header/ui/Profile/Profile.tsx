@@ -1,9 +1,19 @@
+import Image from 'next/image'
+import Link from 'next/link'
+
 import styles from './Profile.module.scss'
 
 export function Profile() {
 	return (
 		<div className={styles.container}>
-			<p>Profile</p>
+			<Link href="/profile">
+				<Image
+					src="/user.png"
+					alt="profile"
+					width={80}
+					height={80}
+				></Image>
+			</Link>
 		</div>
 	)
 }
