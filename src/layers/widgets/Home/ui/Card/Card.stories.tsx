@@ -12,7 +12,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
 	args: {
-		name: 'Card',
+		title: 'Card',
 		href: '/',
 		children: 'content',
 	},
