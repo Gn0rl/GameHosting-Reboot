@@ -10,7 +10,7 @@ export function Home() {
 				<Card title="Создавай!" href="/uploadGame">
 					Выложи свою игру
 				</Card>
-				<Card title="Играй!" href="/play">
+				<Card title="Играй!" href="/games">
 					Играй
 				</Card>
 			</div>
