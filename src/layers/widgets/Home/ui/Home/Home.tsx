@@ -4,7 +4,7 @@ import styles from './Home.module.scss'
 
 export function Home() {
 	return (
-		<div className={styles.container}>
+		<main className={styles.container}>
 			<Title />
 			<div className={styles.cardHolder}>
 				<Card title="Создавай!" href="/uploadGame">
@@ -14,6 +14,6 @@ export function Home() {
 					Играй
 				</Card>
 			</div>
-		</div>
+		</main>
 	)
 }

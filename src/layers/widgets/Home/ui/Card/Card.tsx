@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import styles from './Card.module.scss'
+import React from 'react'
 
 interface Props {
 	title: string
@@ -8,23 +9,32 @@ interface Props {
 	children: React.ReactNode
 }
 
-export function Card({title, href, children}: Props) {
+export function Card(props: Props) {
 	return (
 		<div className={styles.container}>
 			<div className={styles.circle}></div>
-			{href ? (
-				<Link href={href}>
-					<div className={styles.card}>
-						<div className={styles.title}>{title}</div>
-						<div className={styles.content}>{children}</div>
-					</div>
-				</Link>
-			) : (
+			{getCard(props)}
+		</div>
+	)
+}
+
+function getCard({title, href, children}: Props){
+	if(href) {
+		return (
+			<Link href={href}>
 				<div className={styles.card}>
 					<div className={styles.title}>{title}</div>
 					<div className={styles.content}>{children}</div>
 				</div>
-			)}
-		</div>
-	)
+			</Link>
+		)
+	} 
+	else {
+		return (
+			<div className={styles.card}>
+				<div className={styles.title}>{title}</div>
+				<div className={styles.content}>{children}</div>
+			</div>
+		)
+	}
 }

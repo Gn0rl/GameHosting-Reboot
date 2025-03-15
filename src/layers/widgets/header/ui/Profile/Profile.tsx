@@ -12,7 +12,7 @@ export function Profile() {
 					alt="profile"
 					width={80}
 					height={80}
-				></Image>
+				/>
 			</Link>
 		</div>
 	)
