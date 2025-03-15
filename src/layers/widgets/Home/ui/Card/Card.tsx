@@ -8,21 +8,21 @@ interface Props {
 	children: React.ReactNode
 }
 
-export function Card(Props: Props) {
+export function Card({title, href, children}: Props) {
 	return (
 		<div className={styles.container}>
 			<div className={styles.circle}></div>
-			{Props.href ? (
-				<Link href={Props.href}>
+			{href ? (
+				<Link href={href}>
 					<div className={styles.card}>
-						<div className={styles.title}>{Props.title}</div>
-						<div className={styles.content}>{Props.children}</div>
+						<div className={styles.title}>{title}</div>
+						<div className={styles.content}>{children}</div>
 					</div>
 				</Link>
 			) : (
 				<div className={styles.card}>
-					<div className={styles.title}>{Props.title}</div>
-					<div className={styles.content}>{Props.children}</div>
+					<div className={styles.title}>{title}</div>
+					<div className={styles.content}>{children}</div>
 				</div>
 			)}
 		</div>
