@@ -1,0 +1,22 @@
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.content {
+	width: 400px;
+}
+
+.underline {
+	color: rgb(0, 77, 64);
+	border-style: double;
+	border-width: 1px;
+	margin-top: 10px;
+}
+
+.title {
+	padding-left: 3px;
+	font-size: 60px;
+	color: #00695c;
+}

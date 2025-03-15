@@ -1,0 +1,33 @@
+.circle {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	border: #004d40 solid 5px;
+	display: block;
+	margin: auto;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+.container {
+	margin: auto;
+}
+
+.card {
+	padding: 8px;
+	width: 308px;
+	height: 200px;
+	border: #004d40 solid 3px;
+	margin: auto;
+}
+
+.title {
+	text-align: center;
+	font-size: 30px;
+	color: #00695c;
+	text-decoration: none;
+}
+.content {
+	text-align: center;
+	text-decoration: none;
+}
